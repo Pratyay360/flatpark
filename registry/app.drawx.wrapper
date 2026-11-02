@@ -1,0 +1,17 @@
+#!/bin/sh
+# DrawX wrapper for Flatpak
+# This is the entry point that runs the drawx binary
+
+set -e
+
+# The binary is already in /app/extra/drawx
+EXTRA_DIR="/app/extra"
+BINARY="$EXTRA_DIR/drawx"
+
+if [ ! -f "$BINARY" ]; then
+    echo "ERROR: drawx binary not found at $BINARY"
+    exit 1
+fi
+
+# Execute the binary
+"$BINARY"

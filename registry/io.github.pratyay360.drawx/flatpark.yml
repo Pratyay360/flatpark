@@ -1,0 +1,25 @@
+id: io.github.pratyay360.drawx
+name: DrawX
+summary: Offline first brainstorming and whiteboard app
+version: "1.0.0"
+platform: x86_64
+runtime: org.gnome.Platform
+runtime-version: "51"
+
+app:
+  type: executable
+  entry: drawx
+  icon: io.github.pratyay360.drawx
+  categories: [graphics,office]
+  description: Offline first brainstorming and whiteboard app
+  launch-script: ""
+  dependencies:
+    - org.gnome.Platform
+    - org.freedesktop.Platform
+
+update:
+  command: ./resolve-update.sh
+
+policy:
+  proprietary: false
+  dangerous_permissions: []

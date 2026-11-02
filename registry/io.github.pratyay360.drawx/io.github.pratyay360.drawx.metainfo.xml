@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.pratyay360.drawx</id>
+  <launchable type="desktop-id">io.github.pratyay360.drawx.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>DrawX</name>
+  <summary>Offline first brainstorming and whiteboard app</summary>
+  <developer id="io.github.pratyay360.drawx">
+    <name>Pratyay360</name>
+  </developer>
+  <url type="homepage">https://github.com/Pratyay360/drawx</url>
+  <url type="bugtracker">https://github.com/Pratyay360/drawx/issues</url>
+  <url type="vcs-browser">https://github.com/Pratyay360/drawx</url>
+  <description>
+    <p>DrawX is a community package of the official DrawX Linux release, repackaged for Flatpak and maintained independently and unaffiliated with its developer. It repackages the official upstream Linux release unmodified and follows upstream releases automatically.</p>
+    <p>DrawX is a free, open-source desktop application for brainstorming and whiteboarding. It provides an infinite canvas powered by Excalidraw, with local-first storage. The app runs entirely within the Flatpak sandbox, with all dependencies (libwebkit2gtk, libgtk-3, etc.) provided by the org.gnome.Platform runtime.</p>
+    <p>Permissions: this package grants the display, the GPU, the sound server (playback and recording), network access (for model downloads, update notices, and Ableton Link), and your home folder, because projects are folders that the app's own file browser opens directly. With that grant the app uses the same places as a native install: settings in ~/.config/drawx and new projects in ~/Documents/DrawX. The update notice only tells you a new version exists; updates arrive through this Flatpak remote.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/Pratyay360/drawx/main/public/screenshots/whiteboard.png</image>
+      <caption>DrawX whiteboard with infinite canvas and drawing tools</caption>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <categories>
+    <category>Graphics</category>
+    <category>Office</category>
+  </categories>
+  <keywords>
+    <keyword>brainstorming</keyword>
+    <keyword>whiteboard</keyword>
+    <keyword>drawing</keyword>
+    <keyword>excalidraw</keyword>
+  </keywords>
+  <provides>
+    <binary>drawx</binary>
+    <mediatype>application/x-drawx-project</mediatype>
+  </provides>
+  <releases>
+    <release version="1.0.0" date="2026-11-03">
+      <description>Initial release of DrawX Flatpak package</description>
+    </release>
+  </releases>
+</component>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment=Offline first brainstorming and whiteboard app
+Exec=drawx
+StartupWMClass=drawx
+Icon=io.github.pratyay360.drawx
+Name=drawx
+Terminal=false
+Type=Application

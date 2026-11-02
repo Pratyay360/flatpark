@@ -1,0 +1,24 @@
+name: drawx
+version: "1.0.0"
+summary: Offline first brainstorming and whiteboard app
+description: |
+  DrawX is an offline-first brainstorming and whiteboard application built with Tauri v2.
+  It provides an infinite canvas powered by Excalidraw, with local-first storage.
+  The app runs entirely within the Flatpak sandbox, with all dependencies
+  (libwebkit2gtk, libgtk-3, libwebkit2gtk-4.1, etc.) provided by the
+  org.gnome.Platform runtime.
+
+icon: drawx
+
+platforms:
+  - x86_64
+
+requires:
+  - org.gnome.Platform
+  - org.freedesktop.Platform
+
+categories:
+  - graphics
+  - office
+
+license: MIT
